@@ -11,4 +11,4 @@ boton.addEventListener("click", () => {
     //cambiar indice
     estado++;
     if (estado > 2) estado = 0;
-});
+}); 

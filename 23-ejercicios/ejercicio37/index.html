@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 37 JS</title>
+    <script src="ejercicio37.js" defer></script>
+    <style>
+        .info {
+            margin-top: 20px;
+            border: 5px dashed black;
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejercicio 37</h1>
+
+    <form action="#" method="post" id="formulario">
+        <label for="nombre">Nombre:</label> </br>
+        <input type="text" name="nombre" id="nombre"> </br>
+        <span id="error-nombre" style="color: red;"></span> </br>
+
+        <label for="apellidos">Apellidos:</label> </br>
+        <input type="text" name="apellidos" id="apellidos"> </br>
+        <span id="error-apellidos" style="color: red;"></span> </br>
+
+        <label for="edad">Edad:</label> </br>
+        <input type="number" name="edad" id="edad"> </br>
+        <span id="error-edad" style="color: red;"></span> </br>
+
+        <input type="submit" value="Enviar" id="enviar">
+    </form>
+
+    <div class="info">
+        <h3>Informacion del usuario</h3>
+        <p id="info-nombre">
+            Nombre: <strong></strong>
+        </p>
+        <p id="info-apellidos">
+            Apellidos: <strong></strong>
+        </p>
+        <p id="info-edad">
+            Edad: <strong></strong>
+        </p>
+    </div>
+</body>
+
+</html>
