@@ -38,6 +38,7 @@ function guardarPelicula() {
 
     // generar un numero aleatorio
     let popularidad = Math.floor(Math.random() * 10);
+    popularidad += 1;
 
     // crear objeto pelicula
     let pelicula = {
