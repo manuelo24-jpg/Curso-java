@@ -26,6 +26,13 @@ function mostrarPeliculas() {
     // mostrar las peliculas ordenadas por popularidad
     let listadoPopularidad = document.querySelector('#listado-popularidad');
     listadoPopularidad.innerHTML = '';
+
+    listadoPopularidad.innerHTML = '<h3>Películas ordenadas por popularidad</h3>';
+    peliculasGuardadas.forEach(pelicula => {
+        let li = document.createElement('li');
+        li.innerHTML = `${pelicula.titulo} - ${pelicula.fecha} - Popularidad: ${pelicula.popularidad}`;
+        listadoPopularidad.appendChild(li);
+    });
 }
 
 function guardarPelicula() {
