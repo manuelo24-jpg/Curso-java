@@ -33,6 +33,12 @@ function mostrarPeliculas() {
         li.innerHTML = `${pelicula.titulo} - ${pelicula.fecha} - Popularidad: ${pelicula.popularidad}`;
         listadoPopularidad.appendChild(li);
     });
+
+    // mostrar las peliculas ordenadas por popularidad
+    console.log('Películas ordenadas por popularidad:');
+    peliculasGuardadas.forEach(pelicula => {
+        console.log(`${pelicula.titulo} - ${pelicula.fecha} - Popularidad: ${pelicula.popularidad}`);
+    });
 }
 
 function guardarPelicula() {
@@ -75,6 +81,8 @@ function guardarPelicula() {
 
     //mostrar peliculas
     mostrarPeliculas();
+
+
 }
 
 window.addEventListener('load', () => {
