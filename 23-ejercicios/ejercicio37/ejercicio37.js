@@ -42,4 +42,8 @@ formulario.addEventListener('submit', (e) => {
     infoApellido.innerHTML = `${apellido}`;
     infoEdad.innerHTML = `${edad}`;
 
+    formulario.reset();
+    cajaInfo.style.display = 'none';
+
+
 });
