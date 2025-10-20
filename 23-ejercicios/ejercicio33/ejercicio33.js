@@ -11,4 +11,7 @@ boton.addEventListener('click', () => {
     } else {
         numero.textContent = contador + " clicks";
     }
+
+    numero.textContent = contador + " clicks";
+    console.log(contador);
 });

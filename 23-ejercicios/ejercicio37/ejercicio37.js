@@ -46,4 +46,6 @@ formulario.addEventListener('submit', (e) => {
     cajaInfo.style.display = 'none';
 
 
+
+
 });
