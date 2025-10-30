@@ -2,10 +2,11 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { Carrito } from './carrito/carrito';
+import { CarritoSignals } from './carrito-signals/carrito-signals';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Carrito],
+  imports: [RouterOutlet, Carrito, CarritoSignals],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

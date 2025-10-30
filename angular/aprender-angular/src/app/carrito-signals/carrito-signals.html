@@ -1,0 +1,7 @@
+<h1>Ejemplo Señal</h1>
+<h3>Contador {{contador()}}</h3>
+<h3>Contador x3 {{contadorX3()}}</h3>
+
+<input type="number" [value]="incremento()" (input)="incremento.set(+($any($event.target).value))" />
+
+<button (click)="incrementar()">Incrementar</button> {{incremento()}}
