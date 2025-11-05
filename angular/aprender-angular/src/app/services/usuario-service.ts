@@ -22,4 +22,19 @@ export class UsuarioService {
     return this.usuarios.find(usuario => usuario.id === id);
   }
 
+  crearUsuario(usuario: { id: number, nombre: string, email: string }) {
+    this.usuarios.push(usuario);
+  }
+
+  eliminarUsuario(id: number) {
+    this.usuarios = this.usuarios.filter(usuario => usuario.id !== id);
+  }
+
+  actualizarUsuario(id: number, datosActualizados: { nombre?: string, email?: string }) {
+    const usuario = this.getUsuarioPorId(id);
+    if (usuario) {
+      Object.assign(usuario, datosActualizados);
+    }
+  }
+
 }
