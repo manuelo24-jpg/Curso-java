@@ -37,4 +37,8 @@ export class UsuarioService {
     }
   }
 
+  comprobarEmailExistente(email: string): boolean {
+    return this.usuarios.some(usuario => usuario.email === email);
+  }
+
 }
